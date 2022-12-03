@@ -14,6 +14,8 @@ public class corsControlloer
 
     int i = 0;
 
+    int j = 1;
+
     @Autowired
     private com.cm.cmservice.service.currentNHServerInfoRepo currentNHServerInfoRepo;
     @Autowired
