@@ -1,0 +1,28 @@
+server:
+  port: 8892
+
+spring:
+  application:
+    name: cm-service
+
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.100.163:1433;DatabaseName=NH70DB
+    username: sa
+    password: sa2017@)!&
+    platform: mssql
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+eureka:
+  instance:
+    instance-id: cm_2-microservice-instance
+
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
